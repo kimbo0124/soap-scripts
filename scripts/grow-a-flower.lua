@@ -29,7 +29,7 @@ heart.Size = Vector3.new(2, 2, 2)
 heart.Position = Vector3.new(
 math.random(-35, 35),
 4,
-math.random(-35, 35),
+math.random(-35, 35)
 )
 
 heart.Anchored = true
@@ -42,18 +42,18 @@ local collected = false
 heart.Touched:Connect(function(hit)
 if collected then return end
 
-local character = hit.parent
-local player = Player:GetPlayerFromCharacter(character)
+local character = hit.Parent
+local player = Players:GetPlayerFromCharacter(character)
 
 if player then
-local stats = Player:FindFirstChild("leaderstats")
+local stats = player:FindFirstChild("leaderstats")
 local hearts = stats and stats:FindFirstChild("Hearts")
 
 if hearts then
 collected = true
-hearts.Value = 1
+hearts.Value = hearts.Value + 1
 heart:Destroy()
-print(player.name .." collected a heart!")
+print(player.Name .." collected a heart!")
 end
 end
 end)
