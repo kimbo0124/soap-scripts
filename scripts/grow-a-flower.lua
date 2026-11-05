@@ -7,8 +7,12 @@ garden.Name = "GrowAflower"
 garden.Parent = Workspace
 
 --HEART COLLETION SYSTEM
-local stats = Instance.new["Folder"]
+local stats = Instance.new("Folder")
 stats.Name = "leaderstats"
 stats.Parent = player
 
-local hearts = Ina
+local hearts = Instance.new("IntValue")
+hearts.Name = "Hearts"
+hearts.Value = 0
+hearts.Parent = stats
+end
