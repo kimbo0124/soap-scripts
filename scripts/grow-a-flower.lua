@@ -21,5 +21,10 @@ end)
 
 for i = 1, 10 do
 locall heart = Instance.new("Part")
-heart.Name = "LOVEHEART"
-heart.Shape = Enum.Part.Type
+heart.Name = "LoveHearts"
+heart.Shape = Enum.PartType.Ball
+heart.Size = Vector3.new(2, 2, 2)
+heart.Position = Vector3.new(
+math.random(-35, 35),
+4,
+math
