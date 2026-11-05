@@ -15,4 +15,8 @@ local hearts = Instance.new("IntValue")
 hearts.Name = "Hearts"
 hearts.Value = 0
 hearts.Parent = stats
-end
+end)
+
+--CREATE HEARTS
+
+for i = 1, 10 d
