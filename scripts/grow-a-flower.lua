@@ -1,4 +1,4 @@
---GROW A FLOWER--
+--GROW A FLOWER
 local Player = game:GetService ("Players")
 local Workspace = game:GetService("Workspace")
 
