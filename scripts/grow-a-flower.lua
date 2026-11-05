@@ -19,4 +19,7 @@ end)
 
 --CREATE HEARTS
 
-for i = 1, 10 d
+for i = 1, 10 do
+locall heart = Instance.new("Part")
+heart.Name = "LOVEHEART"
+heart.Shape = Enum.Part.Type
