@@ -27,4 +27,10 @@ heart.Size = Vector3.new(2, 2, 2)
 heart.Position = Vector3.new(
 math.random(-35, 35),
 4,
-math
+math.random(-35, 35),
+)
+
+heart.Anchored = true
+heart.CanCollide = false
+heart.Material = Enum.Matertial.Neon
+heart.Colour = Colour3.fromRGB(255,b)
