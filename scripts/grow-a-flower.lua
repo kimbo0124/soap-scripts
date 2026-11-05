@@ -41,4 +41,8 @@ heart.Touched:Connect(function(hit)
 if collected then return end
 
 local character = hit.parent
-local player = Player
+local player = Player:GetPlayerFromCharacter(character)
+
+if player then
+local stats = Player:FindFirstChild("leaderstats")
+
