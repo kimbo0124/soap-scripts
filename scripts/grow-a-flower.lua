@@ -50,4 +50,11 @@ local hearts = stats and stats:FindFirstChild("Hearts")
 if hearts then
 collected = true
 hearts.Value = 1
-heart:
+heart:Destroy()
+print(player.name .." collected a heart!")
+end
+end
+end)
+end
+
+print("GROW A FLOWER is runnning!")
