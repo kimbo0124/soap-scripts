@@ -5,4 +5,10 @@ local Workspace = game:GetService("Workspace")
 local garden = Instance.new("Folder")
 garden.Name = "GrowAflower"
 garden.Parent = Workspace
---HEART 
+
+--HEART COLLETION SYSTEM
+local stats = Instance.new["Folder"]
+stats.Name = "leaderstats"
+stats.Parent = player
+
+local hearts = Ina
