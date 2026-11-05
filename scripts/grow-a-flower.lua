@@ -45,4 +45,9 @@ local player = Player:GetPlayerFromCharacter(character)
 
 if player then
 local stats = Player:FindFirstChild("leaderstats")
+local hearts = stats and stats:FindFirstChild("Hearts")
 
+if hearts then
+collected = true
+hearts.Value = 1
+heart:
