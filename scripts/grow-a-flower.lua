@@ -7,6 +7,8 @@ garden.Name = "GrowAflower"
 garden.Parent = Workspace
 
 --HEART COLLETION SYSTEM
+
+Players.PlayerAdded:Connect(function(player)
 local stats = Instance.new("Folder")
 stats.Name = "leaderstats"
 stats.Parent = player
@@ -20,7 +22,7 @@ end)
 --CREATE HEARTS
 
 for i = 1, 10 do
-locall heart = Instance.new("Part")
+local heart = Instance.new("Part")
 heart.Name = "LoveHearts"
 heart.Shape = Enum.PartType.Ball
 heart.Size = Vector3.new(2, 2, 2)
@@ -32,8 +34,8 @@ math.random(-35, 35),
 
 heart.Anchored = true
 heart.CanCollide = false
-heart.Material = Enum.Matertial.Neon
-heart.Colour = Colour3.fromRGB(255, 70, 145)
+heart.Material = Enum.Material.Neon
+heart.Color = Color3.fromRGB(255, 70, 145)
 heart.Parent = garden
 local collected = false
 
