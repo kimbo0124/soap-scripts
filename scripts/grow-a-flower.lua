@@ -33,4 +33,12 @@ math.random(-35, 35),
 heart.Anchored = true
 heart.CanCollide = false
 heart.Material = Enum.Matertial.Neon
-heart.Colour = Colour3.fromRGB(255,b)
+heart.Colour = Colour3.fromRGB(255, 70, 145)
+heart.Parent = garden
+local collected = false
+
+heart.Touched:Connect(function(hit)
+if collected then return end
+
+local character = hit.parent
+local player = Player
