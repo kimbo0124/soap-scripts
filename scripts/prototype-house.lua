@@ -10,4 +10,4 @@ local Workspace = gameGetService("Workspace")
  local character = playerCharacter or playerCharacterAdded:Wait()
  local root = character:WaitForChild("HumanoidRootPart")
 
- 
+ local base = root.Posi
