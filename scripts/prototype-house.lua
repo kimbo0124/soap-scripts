@@ -8,4 +8,12 @@ local function createPart(name, size, position,color, material)
 local part = Instance.new("Part")
 part.Name = name
 part.Size = size
-part.position
+part.Position = position
+part.Anchored = true
+part.Color = color
+part.Material = material or Enum.Material.SmoothPlastic
+part.Parent = workspace
+return part
+end
+
+--
