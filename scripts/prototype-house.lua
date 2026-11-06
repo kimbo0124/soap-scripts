@@ -3,7 +3,7 @@ local x = 55
 local y = 0
 local z = 35
 
---PART COLOR
+--PART CREATOR
 
 local function createPart(name, size, position,color, material)
 local part = Instance.new("Part")
@@ -17,3 +17,7 @@ part.Parent = workspace
 return part
 end
 
+--COLORS
+
+local cream = Color3.fromRGB(255, 225,190)
+local
